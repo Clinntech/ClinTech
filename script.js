@@ -1,35 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
 
-    // Mobile Menu Toggle
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        
-        // Simple animation for hamburger
-        const spans = menuToggle.querySelectorAll('span');
-        spans.forEach(span => span.classList.toggle('open'));
-    });
-
-    // Close menu when a link is clicked
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
+    // Mobile Navigation Toggle
+    if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
-    });
 
-    // Optional: Subtle Scroll Reveal for bars
-    const observerOptions = {
-        threshold: 0.5
-    };
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
 
+    // Animation for Progress Bars on Scroll
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.5 });
 
     document.querySelectorAll('.bar-fill').forEach(bar => observer.observe(bar));
 });
