@@ -14,7 +14,13 @@
             <div class="logo">
                 CLINTECH <span class="logo-sep">|</span> <span class="logo-title">IT Professional</span>
             </div>
-            <ul class="nav-links">
+            <!-- Mobile Toggle -->
+            <button class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#education">Development</a></li>
                 <li><a href="#experience">Journey</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -24,10 +30,10 @@
     </nav>
 
     <header class="hero">
-        <div class="container hero-content">
+        <div class="container">
             <h1>Architecting Secure <br>& Scalable <span class="text-vibrant">Digital Systems.</span></h1>
             <p class="hero-desc">Bridging hardware-level Cisco networking with modern web infrastructure. I specialize in identifying vulnerabilities and developing the automated projects that fix them.</p>
-            <div class="hero-action-group">
+            <div class="hero-action-area">
                 <div class="hero-btns">
                     <a href="https://github.com/clinntech" target="_blank" class="btn-primary">GitHub Profile</a>
                     <a href="https://www.credly.com/users/clinton-mutinda" target="_blank" class="btn-secondary">Credibility Check</a>
@@ -105,28 +111,28 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="card-content">
+                <div class="card-top">
                     <span class="status-tag done">Done</span>
                     <h3>ClinTech Awareness Platform</h3>
                     <p>A dual-arm online platform raising digital literacy and safety awareness using high-retention content hooks.</p>
                 </div>
-                <a href="https://www.tiktok.com/@clintech_hq?" target="_blank" class="project-link">View Platform →</a>
+                <a href="https://www.tiktok.com/@clintech_hq?" target="_blank" class="btn-card">View Platform →</a>
             </div>
             <div class="project-card">
-                <div class="card-content">
+                <div class="card-top">
                     <span class="status-tag done">Done</span>
                     <h3>Web Development</h3>
                     <p>Full-stack backend infrastructure for a client site. Handled database query refinement, security hardening, and email configuration.</p>
                 </div>
-                <a href="https://saharavasolutions.com/" target="_blank" class="btn-primary-small">Visit Site</a>
+                <a href="https://saharavasolutions.com/" target="_blank" class="btn-card">Visit Site →</a>
             </div>
             <div class="project-card featured">
-                <div class="card-content">
+                <div class="card-top">
                     <span class="status-tag in-progress">In-Progress</span>
                     <h3>SecuSys: System Auditing Engine</h3>
                     <p>A custom multithreaded auditing tool coded in raw Python. Designed to bridge the gap between software vulnerabilities and Cisco IOS configurations.</p>
                 </div>
-                <a href="https://github.com/Clinntech/SecuSys" target="_blank" class="btn-primary-small">Explore Repository</a>
+                <a href="https://github.com/Clinntech/SecuSys" target="_blank" class="btn-card-vibrant">Explore Repository →</a>
             </div>
         </div>
     </section>
@@ -155,7 +161,7 @@
     </section>
 
     <footer class="footer">
-        <div class="container footer-content">
+        <div class="container">
             <p>&copy; 2026 Clinton Mutinda | Custom Built Secure Digital Projects</p>
         </div>
     </footer>
