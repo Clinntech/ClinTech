@@ -9,18 +9,11 @@
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
                 CLINTECH <span class="logo-sep">|</span> <span class="logo-title">IT Professional</span>
             </div>
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <ul class="nav-links">
                 <li><a href="#education">Development</a></li>
                 <li><a href="#experience">Journey</a></li>
@@ -30,22 +23,20 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero">
-        <div class="container">
+        <div class="container hero-content">
             <h1>Architecting Secure <br>& Scalable <span class="text-vibrant">Digital Systems.</span></h1>
             <p class="hero-desc">Bridging hardware-level Cisco networking with modern web infrastructure. I specialize in identifying vulnerabilities and developing the automated projects that fix them.</p>
-            <div class="hero-btns">
-                <a href="https://github.com/clinntech" target="_blank" class="btn-primary">GitHub Profile</a>
-                <a href="https://www.credly.com/users/clinton-mutinda" target="_blank" class="btn-secondary">Credibility Check</a>
-            </div>
-            <div class="hero-badge-container">
-                <span class="badge">BSc. Information Technology | 2024 Graduate</span>
+            <div class="hero-action-group">
+                <div class="hero-btns">
+                    <a href="https://github.com/clinntech" target="_blank" class="btn-primary">GitHub Profile</a>
+                    <a href="https://www.credly.com/users/clinton-mutinda" target="_blank" class="btn-secondary">Credibility Check</a>
+                </div>
+                <span class="hero-badge">BSc. Information Technology | 2024 Graduate</span>
             </div>
         </div>
     </header>
 
-    <!-- Education Section -->
     <section id="education" class="education container section-spacing">
         <h2 class="section-title">Academic & Professional Development</h2>
         <div class="edu-grid">
@@ -84,7 +75,6 @@
         </div>
     </section>
 
-    <!-- Journey Section -->
     <section id="experience" class="experience container section-spacing">
         <h2 class="section-title">Professional Journey</h2>
         <div class="timeline">
@@ -111,53 +101,55 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects container section-spacing">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <span class="status-tag done">Done</span>
-                <h3>ClinTech Awareness Platform</h3>
-                <p>A dual-arm online platform raising digital literacy and safety awareness using high-retention content.</p>
+                <div class="card-content">
+                    <span class="status-tag done">Done</span>
+                    <h3>ClinTech Awareness Platform</h3>
+                    <p>A dual-arm online platform raising digital literacy and safety awareness using high-retention content hooks.</p>
+                </div>
                 <a href="https://www.tiktok.com/@clintech_hq?" target="_blank" class="project-link">View Platform →</a>
             </div>
             <div class="project-card">
-                <span class="status-tag done">Done</span>
-                <h3>Web Developmet</h3>
-                <p>Here's a live site I built for a client. Other than frontend development, I handled most of the backend. The deliverables were database query refinement, security hardening, and contact(email) configuration .</p>
-                <a href="https://saharavasolutions.com/" target="_blank" class="btn-primary inline-btn">Visit Site</a>
+                <div class="card-content">
+                    <span class="status-tag done">Done</span>
+                    <h3>Web Development</h3>
+                    <p>Full-stack backend infrastructure for a client site. Handled database query refinement, security hardening, and email configuration.</p>
+                </div>
+                <a href="https://saharavasolutions.com/" target="_blank" class="btn-primary-small">Visit Site</a>
             </div>
             <div class="project-card featured">
-                <span class="status-tag in-progress">In-Progress</span>
-                <h3>SecuSys: System Auditing Engine</h3>
-                <p>A custom multithreaded auditing tool coded in raw Python for Cisco IOS configurations.</p>
-                <a href="https://github.com/Clinntech/SecuSys" target="_blank" class="btn-primary inline-btn">Explore Repository</a>
+                <div class="card-content">
+                    <span class="status-tag in-progress">In-Progress</span>
+                    <h3>SecuSys: System Auditing Engine</h3>
+                    <p>A custom multithreaded auditing tool coded in raw Python. Designed to bridge the gap between software vulnerabilities and Cisco IOS configurations.</p>
+                </div>
+                <a href="https://github.com/Clinntech/SecuSys" target="_blank" class="btn-primary-small">Explore Repository</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact container section-spacing">
-        <div class="contact-details">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-intro">Let's discuss digital strategies, system development and security or other technical roles.</p>
-            <div class="contact-grid">
-                <div class="info-item">
-                    <span class="label">Email</span>
-                    <a href="mailto:clintechke@gmail.com" class="value">clintechke@gmail.com</a>
-                </div>
-                <div class="info-item">
-                    <span class="label">LinkedIn</span>
-                    <a href="https://www.linkedin.com/in/clintonkyuthamut/" target="_blank" class="value">clintonkyuthamut</a>
-                </div>
-                <div class="info-item">
-                    <span class="label">TikTok</span>
-                    <a href="https://www.tiktok.com/@clintech_hq?" target="_blank" class="value">@clintech_hq</a>
-                </div>
-                <div class="info-item">
-                    <span class="label">Instagram</span>
-                    <a href="https://www.instagram.com/clintechke?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="value">@clintechke</a>
-                </div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-sub">Let's discuss digital strategies, system development, and security roles.</p>
+        <div class="contact-grid">
+            <div class="info-item">
+                <span class="label">Email</span>
+                <a href="mailto:clintechke@gmail.com" class="value">clintechke@gmail.com</a>
+            </div>
+            <div class="info-item">
+                <span class="label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/clintonkyuthamut/" target="_blank" class="value">clintonkyuthamut</a>
+            </div>
+            <div class="info-item">
+                <span class="label">TikTok</span>
+                <a href="https://www.tiktok.com/@clintech_hq?" target="_blank" class="value">@clintech_hq</a>
+            </div>
+            <div class="info-item">
+                <span class="label">Instagram</span>
+                <a href="https://www.instagram.com/clintechke" target="_blank" class="value">@clintechke</a>
             </div>
         </div>
     </section>
